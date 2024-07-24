@@ -142,8 +142,21 @@ header input {
 }
 
 @media (max-width: 600px) {
+  header{
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .movie-list {
     grid-template-columns: 1fr;
+  }
+
+  .movie-card {
+    margin: 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
   }
 
   .modal-content {
