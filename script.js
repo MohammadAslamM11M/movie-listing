@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .map(
         (movie) => `
             <div class="movie-card" data-title="${movie.title}" data-poster="${movie.poster}" data-description="${movie.description}">
-                <img src="${movie.poster}" alt="${movie.title}">
+                <img src="${movie.poster}" alt="${movie.title}" loading="lazy">
                 <h3>${movie.title}</h3>
             </div>
         `
